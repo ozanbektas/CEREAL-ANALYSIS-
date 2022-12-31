@@ -23,7 +23,7 @@
 
 ```import math```
 
-#read the dataset
+## read the dataset
 
 ```emp_data = pd.read_csv('C:/Users/ozann/OneDrive/Masaüstü/databank/data101  proje/cereal.csv', low_memory= False)```
 
@@ -44,6 +44,8 @@
 
 ```data.iloc[:,[0,15]]```
 
+----
+
 | name     |  rating  |
 |----------|----------|
 |100% Bran |68.402973 |
@@ -57,7 +59,7 @@
 
 ```df.type.astype('category').cat.codes```
 
-#there is no null value
+## there is no null value
 
 ```df['type'] = df['type'].replace({'C': 0, 'H': 1})```
 

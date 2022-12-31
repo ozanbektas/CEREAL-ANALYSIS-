@@ -50,7 +50,7 @@
 ```scaler = StandardScaler()```
 ```scaler.fit(x_train)```
 ```x_train = pd.DataFrame(scaler.transform(x_train), index=x_train.index, columns=x_train.columns)```
-```x_test = pd.DataFrame(scaler.transform(x_test), index=x_test.index, columns=x_test.columns)``
+```x_test = pd.DataFrame(scaler.transform(x_test), index=x_test.index, columns=x_test.columns)```
 
 ```x_train```
 

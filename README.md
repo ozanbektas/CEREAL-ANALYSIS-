@@ -57,9 +57,8 @@
 ```x_test```
 
 ```models = {```
-```"         Linear Regression : LinearRegression(),```
-```"         Random Forest    " : RandomForestRegressor()```
-`}`
+```"Linear Regression : LinearRegression(),```
+```"Random Forest    " : RandomForestRegressor()}```
 `for name, model in models.items():`
     `model.fit(x_train, y_train)`
     

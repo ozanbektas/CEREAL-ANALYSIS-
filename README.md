@@ -53,7 +53,4 @@ for name, model in models.items():
     for name, model in models.items():
     print(name + " R^2 Score: {:.5f}".format(model.score(x_test, y_test)))
 
-   #diyezler ddjdkdk
-   dkjdbbdd
-   skdjbv
    

@@ -1,9 +1,11 @@
-           #INTRODUCTION
+# INTRODUCTION
 
- ###### Cereal is a popular breakfast food in the United States, consisting of processed grains that are often mixed with sweeteners and served with milk. It is a quick and convenient option that is widely available in supermarkets and consumed by people of all ages. The first cereals were developed in the late 19th century and were initially marketed as a health food. Today, there are numerous varieties of cereals available, ranging from traditional oats and corn flakes to more innovative flavors and formulations. Many cereals are fortified with vitamins and minerals and are often marketed as a nutritious choice for breakfast. In addition to being eaten as a breakfast food, cereal is also commonly used as an ingredient in baked goods and as a topping for desserts.          
+ ###### Cereal is a popular breakfast food in the United States, consisting of processed grains that are often mixed with sweeteners and served with milk. It is a quick and convenient option that is widely available in supermarkets and consumed by people of all ages. The first cereals were developed in the late 19th century and were initially marketed as a health food. Today, there are numerous varieties of cereals available, ranging from traditional oats and corn flakes to more innovative flavors and formulations. Many cereals are fortified with vitamins and minerals and are often marketed as a nutritious choice for breakfast. In addition to being eaten as a breakfast food, cereal is also commonly used as an ingredient in baked goods and as a topping for desserts. 
+ ---
 
 
-![CEREALS](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3DCEREAL&psig=AOvVaw1IKA4QTN84g6SybSAJvTpQ&ust=1672611509830000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIiXvsjxpPwCFQAAAAAdAAAAABAE)
+
+
 
 
 ```import pandas as pd```
@@ -40,6 +42,18 @@
 ```data.info()```
 
 
+```data.iloc[:,[0,15]]```
+
+| name     |  rating  |
+|100% Bran |68.402973 |
+|Trix      |27.753301 |
+|Wheaties  |51.592193 |
+|Honey Gold|36.187559 |
+
+---
+
+
+
 ```df.type.astype('category').cat.codes```
 
 #there is no null value
@@ -72,5 +86,6 @@
     
 ```for name, model in models.items():```
 ```print(name + " R^2 Score: {:.5f}".format(model.score(x_test, y_test)))```
+
 
    

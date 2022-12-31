@@ -47,23 +47,23 @@
 ```x_train, x_test, y_train, y_test = train_test_split(x, y, train_size=0.8, shuffle=True, random_state=2)```
 
 # Scale x
-scaler = StandardScaler()
-scaler.fit(x_train)
-x_train = pd.DataFrame(scaler.transform(x_train), index=x_train.index, columns=x_train.columns)
-x_test = pd.DataFrame(scaler.transform(x_test), index=x_test.index, columns=x_test.columns)
+```scaler = StandardScaler()```
+```scaler.fit(x_train)```
+```x_train = pd.DataFrame(scaler.transform(x_train), index=x_train.index, columns=x_train.columns)```
+```x_test = pd.DataFrame(scaler.transform(x_test), index=x_test.index, columns=x_test.columns)``
 
 ```x_train```
 
 ```x_test```
 
-`models` `=` `{`
-`"`         `Linear Regression" : LinearRegression(),`
-`"  `       `Random Forest    " : RandomForestRegressor()`
+```models = {```
+```"         Linear Regression : LinearRegression(),```
+```"         Random Forest    " : RandomForestRegressor()```
 `}`
 `for name, model in models.items():`
     `model.fit(x_train, y_train)`
     
-    `for name, model in models.items():`
-    `print(name + " R^2 Score: {:.5f}".format(model.score(x_test, y_test)))`
+```for name, model in models.items():```
+```print(name + " R^2 Score: {:.5f}".format(model.score(x_test, y_test)))```
 
    

@@ -89,6 +89,6 @@
     
 ```for name, model in models.items():```
 ```print(name + " R^2 Score: {:.5f}".format(model.score(x_test, y_test)))```
-
-
-   
+|Linear Regression R^2 Score |Random Forest     R^2 Score |
+|----------------------------|----------------------------|
+|0.99327                     | 0.81803                    |
